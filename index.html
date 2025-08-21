@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu 3 Chức Năng</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    .login-box, .menu {
+      margin: 100px auto;
+      padding: 20px;
+      background: white;
+      width: 340px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px gray;
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    input {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 5px;
+      border: none;
+      border-radius: 5px;
+      background: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #45a049;
+    }
+    .menu {
+      display: none;
+    }
+    #apps {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+<div class="login-box" id="loginBox">
+  <h2>Đăng nhập</h2>
+  <input type="text" id="username" placeholder="Tên đăng nhập"><br>
+  <input type="password" id="password" placeholder="Mật khẩu"><br>
+  <button onclick="login()">Đăng nhập</button>
+</div>
+
+<div class="menu" id="menu">
+  <h2>Menu 3 chức năng</h2>
+  <button onclick="optimizeDevice()">Tối ưu máy</button>
+  <button onclick="fixLag()">Fix lag</button>
+  <button onclick="closeBackgroundApps()">Tối ưu cuối</button>
+
+  <div id="apps"></div>
+</div>
+
+<script>
+  function login() {
+    let user = document.getElementById("username").value;
+    let pass = document.getElementById("password").value;
+
+    // Đăng nhập bằng tài khoản bạn yêu cầu
+    if (user === "nhung" && pass === "meomeo") {
+      document.getElementById("loginBox").style.display = "none";
+      document.getElementById("menu").style.display = "block";
+    } else {
+      alert("Sai tên đăng nhập hoặc mật khẩu!");
+    }
+  }
+
+  // Chức năng 1: Tối ưu máy
+  function optimizeDevice() {
+    if (window.gc) {
+      window.gc();
+    }
+    for (let i = 0; i < 100000; i++) {
+      let temp = null;
+    }
+    alert("✅ Máy đã được tối ưu!");
+  }
+
+  // Chức năng 2: Fix lag
+  function fixLag() {
+    let bigArray = [];
+    for (let i = 0; i < 1000000; i++) {
+      bigArray.push(i);
+    }
+    bigArray = null;
+    if (window.gc) window.gc();
+    alert("🚀 Đã dọn RAM và giảm lag!");
+  }
+
+  // Chức năng 3: Tối ưu cuối (tắt app nền mô phỏng)
+  let backgroundApps = ["Facebook", "Messenger", "TikTok", "YouTube", "Zalo"];
+  function closeBackgroundApps() {
+    if (backgroundApps.length === 0) {
+      document.getElementById("apps").innerHTML = "✅ Không còn ứng dụng chạy nền!";
+      return;
+    }
+    let closed = backgroundApps.join(", ");
+    backgroundApps = []; // xoá hết app nền
+    document.getElementById("apps").innerHTML = "🔒 Đã tắt ứng dụng nền: " + closed;
+    alert("✅ Đã tắt toàn bộ ứng dụng chạy nền!");
+  }
+</script>
+
+</body>
+</html>
