@@ -1,123 +1,377 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Menu 3 Chức Năng</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f0f0f0;
-      text-align: center;
-      margin: 0;
-      padding: 0;
-    }
-    .login-box, .menu {
-      margin: 100px auto;
-      padding: 20px;
-      background: white;
-      width: 340px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px gray;
-    }
-    h2 {
-      margin-bottom: 20px;
-    }
-    input {
-      width: 90%;
-      padding: 10px;
-      margin: 10px 0;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    button {
-      padding: 10px 20px;
-      margin: 5px;
-      border: none;
-      border-radius: 5px;
-      background: #4CAF50;
-      color: white;
-      cursor: pointer;
-    }
-    button:hover {
-      background: #45a049;
-    }
-    .menu {
-      display: none;
-    }
-    #apps {
-      margin-top: 15px;
-      font-size: 14px;
-      color: #333;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Daw, Samples, Vst-Plugins</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="DƯỚI ĐÂY LÀ TẤT CẢ NHỮNG DAW, SAMPLE, VST-PLUGINS MÌNH CÓ THỂ SHARE CHO MỌI NGƯỜI MIỄN PHÍ.   NHẠC LÍ CƠ BẢN - GAM, HỢP ÂM:  Lưu ý: tài liệu nhạc lý cơ bản được sưu tầm, hiện tại thì chưa có bản nâng cao, mong các bạn thông cảm. https://drive.google.com/file/d/1BssHUg9BgboqrgDp-Crou5Xe36aD9sx_/view  TIPS AND TRICKS KHI MIXING ">
+    <link rel="stylesheet" href="theme.css">
+    <style>
+    
+.normal_text {
+font-family: Arial;
+font-size: 11.0PT;
+color: #000000;
+line-height: 1.15;
+direction: ltr;
+}
+h1 {
+font-size: 20.0PT;
+padding-top: 20.0PT;
+padding-bottom: 6.0PT;
+direction: ltr;
+}
+h2 {
+font-size: 16.0PT;
+padding-top: 18.0PT;
+padding-bottom: 6.0PT;
+direction: ltr;
+}
+h3 {
+font-size: 14.0PT;
+color: #434343;
+padding-top: 16.0PT;
+padding-bottom: 4.0PT;
+direction: ltr;
+}
+h4 {
+font-size: 12.0PT;
+color: #666666;
+padding-top: 14.0PT;
+padding-bottom: 4.0PT;
+direction: ltr;
+}
+h5 {
+font-size: 11.0PT;
+color: #666666;
+padding-top: 12.0PT;
+padding-bottom: 4.0PT;
+direction: ltr;
+}
+h6 {
+font-size: 11.0PT;
+color: #666666;
+font-style: italic;
+padding-top: 12.0PT;
+padding-bottom: 4.0PT;
+direction: ltr;
+}
+.title {
+font-size: 26.0PT;
+padding-bottom: 3.0PT;
+direction: ltr;
+}
+.subtitle {
+font-family: Arial;
+font-size: 15.0PT;
+color: #666666;
+padding-bottom: 16.0PT;
+direction: ltr;
+}
+
+
+    </style>
 </head>
 <body>
-
-<div class="login-box" id="loginBox">
-  <h2>Đăng nhập</h2>
-  <input type="text" id="username" placeholder="Tên đăng nhập"><br>
-  <input type="password" id="password" placeholder="Mật khẩu"><br>
-  <button onclick="login()">Đăng nhập</button>
-</div>
-
-<div class="menu" id="menu">
-  <h2>Menu 3 chức năng</h2>
-  <button onclick="optimizeDevice()">Tối ưu máy</button>
-  <button onclick="fixLag()">Fix lag</button>
-  <button onclick="closeBackgroundApps()">Tối ưu cuối</button>
-
-  <div id="apps"></div>
-</div>
-
+<header>
+    <div class="hamburger-menu" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav>
+    <ul>
+        <li><a href="index.html">Daw, Samples, Vst-Plugins</a></li>
+        <li><a href="mod-herax.html">Mod-Herax</a></li>
+        <li><a href="script-king-30/11.html">Script king 30/11</a></li>
+        <li><a href="tut-unlock-282-by-ph%E1%BA%A1m-s%E1%BB%B9-hu%E1%BA%A5n.html">TUT UNLOCK 282 BY PHẠM SỸ HUẤN</a></li>
+        <li><a href="t%C3%A0i-li%E1%BB%87u-kh%C3%B4ng-c%C3%B3-ti%C3%AAu-%C4%91%E1%BB%81.html">Tài liệu không có tiêu đề</a></li>
+        <li><a href="%C4%91ki-trong-game-2-d%C3%B2ng-%C4%91%E1%BA%A7u-l%C3%A0-tk-v%C3%A0-mk.html">Đki trong game 2 dòng đầu là tk và mk</a></li>
+    </ul>
+    </nav>
+</header>
+<div class="content"clear: both; overflow: auto; ">
+<div style="clear: both;">&nbsp;</div><br><p class="normal_text" style='direction: ltr; text-align: center; '><span style='font-size: 30.0PT; background-color: #9fc5e8; '><u><em><strong>DƯỚI ĐÂY LÀ TẤT CẢ NHỮNG DAW, SAMPLE, VST-PLUGINS MÌNH CÓ THỂ SHARE CHO MỌI NGƯỜI MIỄN PHÍ. 
+</strong></em></u></span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 10.0PT; '><u><em><strong>
+</strong></em></u></span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 10.0PT; '><u><em><strong>
+</strong></em></u></span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 25.0PT; background-color: #e06666; '><strong>NHẠC LÍ CƠ BẢN - GAM, HỢP ÂM:</strong></span><span style='font-size: 25.0PT; '><strong>&nbsp;&nbsp;
+</strong></span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>Lưu ý: tài liệu nhạc lý cơ bản được sưu tầm, hiện tại thì chưa có bản nâng cao, mong các bạn thông cảm.
+</strong></span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1BssHUg9BgboqrgDp-Crou5Xe36aD9sx_/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1BssHUg9BgboqrgDp-Crou5Xe36aD9sx_/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; background-color: #6aa84f; '><strong>TIPS AND TRICKS KHI MIXING or LÀM NHẠC:&nbsp;&nbsp; BY THE GREEN TUNE
+</strong></span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/drive/folders/1o-ybt9z47uZcRkpJNciyZGMfziXcOea7" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/drive/folders/1o-ybt9z47uZcRkpJNciyZGMfziXcOea7</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 50.0PT; background-color: #e06666; '><strong>DAW:
+</strong></span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>
+</strong></span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>1. Ableton 10 Win: 
+</strong></span></p><ul style="padding-left: 20.0px;"><li><span style='font-size: 14.0PT; '><strong>ver 10.1.9:&nbsp;&nbsp;</strong></span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1TKlBHu0jSxeCBtaClvtVxlGXq9feP3DX/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1TKlBHu0jSxeCBtaClvtVxlGXq9feP3DX/view</a></span><span style='font-size: 14.0PT; '>
+</span></li></ul><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>2. FL Studio Win:</strong></span><span style='font-size: 14.0PT; '>
+</span></p><ul style="padding-left: 20.0px;"><li><span style='font-size: 14.0PT; '><strong>ver 20.8.3.2304: pass giải nén (123) 
+</strong></span></li></ul><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1Kqx6FVjTArmWGF1C7EmuSqEBNOqaHd2c/view" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1Kqx6FVjTArmWGF1C7EmuSqEBNOqaHd2c/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><ul style="padding-left: 20.0px;"><li><span style='font-size: 14.0PT; '><strong>ver 21</strong></span><span style='font-size: 14.0PT; '>: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1-1j0UkMe9dHOuRgd7x3JybhKvMzJ2W3Y/view" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1-1j0UkMe9dHOuRgd7x3JybhKvMzJ2W3Y/view</a></span><span style='font-size: 14.0PT; '>
+</span></li></ul><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '>sau khi cài đặt bản trial xong thì giải nén file crack ra rồi đọc và làm theo file hướng dẫn cài
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>3. FL Studio Mac: </strong></span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/13Rj5XNMvHVIdYWEXTJKTMaMy55QFvCjP/view" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/13Rj5XNMvHVIdYWEXTJKTMaMy55QFvCjP/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='line-height: 1.15; direction: ltr; '><span style='font-size: 14.0PT; background-color: #e06666; '><strong>
+</strong></span></p><p class="normal_text" style='line-height: 1.15; direction: ltr; '><span style='font-size: 14.0PT; background-color: #e06666; '><strong>
+</strong></span></p><p class="normal_text" style='line-height: 1.15; direction: ltr; '><span style='font-size: 14.0PT; background-color: #e06666; '><strong>
+</strong></span></p><p class="normal_text" style='line-height: 1.15; direction: ltr; '><span style='font-size: 14.0PT; background-color: #e06666; '><strong>
+</strong></span></p><p class="normal_text" style='line-height: 1.15; direction: ltr; '><span style='font-size: 14.0PT; background-color: #e06666; '><strong>
+</strong></span></p><p class="normal_text" style='line-height: 1.15; direction: ltr; '><span style='font-size: 50.0PT; background-color: #e06666; '><strong>SAMPLES</strong></span><span style='font-size: 50.0PT; background-color: #e06666; '>:
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>1. StiickzZ: 
+</strong></span></p><ul style="padding-left: 20.0px;"><li><span style='font-size: 14.0PT; '>StiickzZ - Future bass vol 1: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1JkJhkg1-hFyJGsBdYNK3sWiXiTCA3pYz/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1JkJhkg1-hFyJGsBdYNK3sWiXiTCA3pYz/view</a></span><span style='font-size: 14.0PT; '>
+</span></li><li><span style='font-size: 14.0PT; '>StiickzZ - Future bass vol 2: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1C6j-BV2WTDdkRyB8Fj_OXnYD3g6WbL5n/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1C6j-BV2WTDdkRyB8Fj_OXnYD3g6WbL5n/view</a></span><span style='font-size: 14.0PT; '>
+</span></li><li><span style='font-size: 14.0PT; '>StiickzZ - Future house: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1pjLYUtBWUS1k91hkRfjQxFK_4I2to9gC/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1pjLYUtBWUS1k91hkRfjQxFK_4I2to9gC/view</a></span><span style='font-size: 14.0PT; '>
+</span></li><li><span style='font-size: 14.0PT; '>StiickzZ - Future chill: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/19Vp2RJZLYszhAdCjoPog0H8VcEzgy_1R/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/19Vp2RJZLYszhAdCjoPog0H8VcEzgy_1R/view</a></span><span style='font-size: 14.0PT; '>
+</span></li><li><span style='font-size: 14.0PT; '>StiickzZ - Sounds Illenium: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1DszoHFpECijGm1FMbaskWU66aUrSOy1r/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1DszoHFpECijGm1FMbaskWU66aUrSOy1r/view</a></span><span style='font-size: 14.0PT; '>
+</span></li><li><span style='font-size: 14.0PT; '>StiickzZ - Sounds Illenium vol 2 PRO: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1osUrPBiqVjPxSJ0hmjEtXJc6bo-VT0W7/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1osUrPBiqVjPxSJ0hmjEtXJc6bo-VT0W7/view</a></span><span style='font-size: 14.0PT; '>
+</span></li><li><span style='font-size: 14.0PT; '>StiickzZ - Sticky Sounds Porter Edition Pro: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/17i9e8hoRJLxF6tliLr0uuYfNikdIij_-/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/17i9e8hoRJLxF6tliLr0uuYfNikdIij_-/view</a></span><span style='font-size: 14.0PT; '>
+</span></li><li><span style='font-size: 14.0PT; '>StiickzZ - Future Bounce: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/195XBO1t_Aoac5Jd_Zbi5DXVNB6mQI3Kn/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/195XBO1t_Aoac5Jd_Zbi5DXVNB6mQI3Kn/view</a></span><span style='font-size: 14.0PT; '>
+</span></li></ul><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>2. VEDH (Vengeance Essential Deep House):
+</strong></span></p><ul style="padding-left: 20.0px;"><li><span style='font-size: 14.0PT; '>Vol 1: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/open?id=1jOcrYybdhJCmZ8jXGFJg-ES_zqM6Y3ey" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/open?id=1jOcrYybdhJCmZ8jXGFJg-ES_zqM6Y3ey</a></span><span style='font-size: 14.0PT; '>
+</span></li><li><span style='font-size: 14.0PT; '>Vol 2: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/open?id=12CiSSvfmmFd4Q1G_7_iGFzzoh08kpJKA" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/open?id=12CiSSvfmmFd4Q1G_7_iGFzzoh08kpJKA</a></span><span style='font-size: 14.0PT; '>
+</span></li></ul><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>3. VEDM (Vengeance </strong></span><span style='font-size: 14.0PT; color: #222222; background-color: #ffffff; '><strong>Electronic Dance Music):</strong></span><span style='font-size: 14.0PT; color: #222222; background-color: #ffffff; '> </span><span style='font-size: 14.0PT; '>
+</span></p><ul style="padding-left: 20.0px;"><li><span style='font-size: 14.0PT; '>Vol 1: 
+</span></li></ul><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/open?id=1694yKOA9_o9noofl2sLrKRuQUdSulbz5" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/open?id=1694yKOA9_o9noofl2sLrKRuQUdSulbz5</a></span><span style='font-size: 14.0PT; '>
+</span></p><ul style="padding-left: 20.0px;"><li><span style='font-size: 14.0PT; '>Vol 2: 
+</span></li></ul><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/open?id=1AHQgc8kitA-3mlmjOdFlP3utoFESsGsC" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/open?id=1AHQgc8kitA-3mlmjOdFlP3utoFESsGsC</a></span><span style='font-size: 14.0PT; '>
+</span></p><ul style="padding-left: 20.0px;"><li><span style='font-size: 14.0PT; '>Vol 3: 
+</span></li></ul><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1OGZYa7qh559DhcI6mlRNZxy2nXyfyjM1/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1OGZYa7qh559DhcI6mlRNZxy2nXyfyjM1/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>4. VFX: (Vengeance Essential FX)
+</strong></span></p><ul style="padding-left: 20.0px;"><li><span style='font-size: 14.0PT; '>Vol 1: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/open?id=16QkX6P2kPB3EY3M85E2kuLCPisNot_Yz" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/open?id=16QkX6P2kPB3EY3M85E2kuLCPisNot_Yz</a></span><span style='font-size: 14.0PT; '>
+</span></li><li><span style='font-size: 14.0PT; '>Vol 2: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/open?id=1mXRHa7xR5N9K7Ag8mc0BkXBXzf2x_bxZ" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/open?id=1mXRHa7xR5N9K7Ag8mc0BkXBXzf2x_bxZ</a></span><span style='font-size: 14.0PT; '>
+</span></li><li><span style='font-size: 14.0PT; '>Vol 3: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/open?id=1tjpQQMUyYP6gRP6hIZ5A_0yM3WERLeJn" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/open?id=1tjpQQMUyYP6gRP6hIZ5A_0yM3WERLeJn</a></span><span style='font-size: 14.0PT; '>
+</span></li></ul><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>5. Ultrasonic:</strong></span><span style='font-size: 14.0PT; '> 
+</span></p><ul style="padding-left: 20.0px;"><li><span style='font-size: 14.0PT; '>Future bass Vol 1: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1hHZFCFvDzgqC6tvIohYIzISOGHYi2Vwi/view" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1hHZFCFvDzgqC6tvIohYIzISOGHYi2Vwi/view</a></span><span style='font-size: 14.0PT; '>
+</span></li><li><span style='font-size: 14.0PT; '>Future bass Vol 2: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1Mnbg4fpWV8fMPMggwsKXau4RkB4Yl3n3/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1Mnbg4fpWV8fMPMggwsKXau4RkB4Yl3n3/view</a></span><span style='font-size: 14.0PT; '>
+</span></li><li><span style='font-size: 14.0PT; '>Future House Vol 1: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1Khgnajpk7ArN5RT4VefACr-u5KOJSRjI/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1Khgnajpk7ArN5RT4VefACr-u5KOJSRjI/view</a></span><span style='font-size: 14.0PT; '>
+</span></li><li><span style='font-size: 14.0PT; '>Progressive House 1 (The King): </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1Vahxa48L5eB0YePA9FetJyYZ8kh-reqd/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1Vahxa48L5eB0YePA9FetJyYZ8kh-reqd/view</a></span><span style='font-size: 14.0PT; '>
+</span></li><li><span style='font-size: 14.0PT; '>Martin Garrix: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1zM5G42uO9cWGlVy0YOtWBiv209YLKBaj/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1zM5G42uO9cWGlVy0YOtWBiv209YLKBaj/view</a></span><span style='font-size: 14.0PT; '>
+</span></li><li><span style='font-size: 14.0PT; '>Future Bounce:
+</span></li></ul><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1f7EcUsWi9yS7fjaLLOyglJPVQVyubMUW/view" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1f7EcUsWi9yS7fjaLLOyglJPVQVyubMUW/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><ul style="padding-left: 20.0px;"><li><span style='font-size: 14.0PT; '>Slap house vol 1: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1_sZq2MUAw7GZHHJlUQ2VNM8VRnLpmaC1/view" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1_sZq2MUAw7GZHHJlUQ2VNM8VRnLpmaC1/view</a></span><span style='font-size: 14.0PT; '>
+</span></li><li><span style='font-size: 14.0PT; '>Heroes - Progressive House Toolkit: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1gE8nxemy3IHLDgVE3Dg2HDMsX3NL5F1a/view" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1gE8nxemy3IHLDgVE3Dg2HDMsX3NL5F1a/view</a></span><span style='font-size: 14.0PT; '>
+</span></li></ul><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>6. FUSION - Brooks:
+</strong></span></p><ul style="padding-left: 20.0px;"><li><span style='font-size: 14.0PT; '>Vol 1: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1jQXiDRxlZs-7c0xvkshZks2YLcbKO7R7/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1jQXiDRxlZs-7c0xvkshZks2YLcbKO7R7/view</a></span><span style='font-size: 14.0PT; '>
+</span></li><li><span style='font-size: 14.0PT; '>Vol 2: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1SZD0M2HvtAcyArq8YSx5z0wbdk8SEXbm/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1SZD0M2HvtAcyArq8YSx5z0wbdk8SEXbm/view</a></span><span style='font-size: 14.0PT; '>
+</span></li><li><span style='font-size: 14.0PT; '>Vol 3: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1WiXf3R4Fv95RDCYwtitCvzBHR5gMeGsL/view" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1WiXf3R4Fv95RDCYwtitCvzBHR5gMeGsL/view</a></span><span style='font-size: 14.0PT; '>
+</span></li></ul><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>7. KSHMR:
+</strong></span></p><ul style="padding-left: 20.0px;"><li><span style='font-size: 14.0PT; '>Vol 1: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/17s2EnYyWYcuLNGr5VXACBFsXvLkC2PpW" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/17s2EnYyWYcuLNGr5VXACBFsXvLkC2PpW</a></span><span style='font-size: 14.0PT; '>
+</span></li><li><span style='font-size: 14.0PT; '>Vol 2: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1CeK3GXtxGj6zo0i3yFFGoU1Kxynsdh0h/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1CeK3GXtxGj6zo0i3yFFGoU1Kxynsdh0h/view</a></span><span style='font-size: 14.0PT; '>
+</span></li><li><span style='font-size: 14.0PT; '>Vol 3: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/open?id=1YQbk399zN_y3cvPYt7rMB3qwE2sxHgiO" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/open?id=1YQbk399zN_y3cvPYt7rMB3qwE2sxHgiO</a></span><span style='font-size: 14.0PT; '>
+</span></li><li><span style='font-size: 14.0PT; '>Vol 4: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1jk1FjOQeROEF1j5zwNB66BXXVY6n6rVX/view" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1jk1FjOQeROEF1j5zwNB66BXXVY6n6rVX/view</a></span><span style='font-size: 14.0PT; '>
+</span></li></ul><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>8. VEC (Vengeance Essential Club sounds):
+</strong></span></p><ul style="padding-left: 20.0px;"><li><span style='font-size: 14.0PT; '>Vol 1: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1zTplfJqHYG7j9hJjk8TIuBOkA9XCnnEf/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1zTplfJqHYG7j9hJjk8TIuBOkA9XCnnEf/view</a></span><span style='font-size: 14.0PT; '>
+</span></li><li><span style='font-size: 14.0PT; '>Vol 2: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1K_Xyd-r53rrdaR163S6u6uwgH6c1FiMa/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1K_Xyd-r53rrdaR163S6u6uwgH6c1FiMa/view</a></span><span style='font-size: 14.0PT; '>
+</span></li><li><span style='font-size: 14.0PT; '>Vol 3:</span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1UmNhlT6FvtjhwVXC3HwQxAhpm5WERc9D/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1UmNhlT6FvtjhwVXC3HwQxAhpm5WERc9D/view</a></span><span style='font-size: 14.0PT; '>
+</span></li><li><span style='font-size: 14.0PT; '>Vol 4: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1FAhX8ItZ5UKfw6tiLbtx4NxQeUYZ00BN/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1FAhX8ItZ5UKfw6tiLbtx4NxQeUYZ00BN/view</a></span><span style='font-size: 14.0PT; '>
+</span></li><li><span style='font-size: 14.0PT; '>Vol 5: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1c8YYeL1HF6t1Cuf6OX5UD6jbwgGp4UJJ/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1c8YYeL1HF6t1Cuf6OX5UD6jbwgGp4UJJ/view</a></span><span style='font-size: 14.0PT; '>
+</span></li></ul><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>9. DJ TwiZzy - Tropical House:</strong></span><span style='font-size: 14.0PT; '> 
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/open?id=1ykbKXCWZWdElT_LkbncpkpNUlGDv0Ys0" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/open?id=1ykbKXCWZWdElT_LkbncpkpNUlGDv0Ys0</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>10. DeliFB (Future bass):</strong></span><span style='font-size: 14.0PT; '> </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/open?id=1f6br-xPvTZEd-FLejNB_wqHVfwpiDmuQ" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/open?id=1f6br-xPvTZEd-FLejNB_wqHVfwpiDmuQ</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>11. Kawaii Future Bass: </strong></span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1zkfdXm5USWfSA2YVkdFc4DVDCNky-gHl/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1zkfdXm5USWfSA2YVkdFc4DVDCNky-gHl/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>12. TRAMOM: </strong></span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/open?id=1SUOWSnAOSDMxAv01gcMf8Qz0vhtKimhs" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/open?id=1SUOWSnAOSDMxAv01gcMf8Qz0vhtKimhs</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>13. Cymatics:</strong></span><span style='font-size: 14.0PT; '> 
+</span></p><ul style="padding-left: 20.0px;"><li><span style='font-size: 14.0PT; '>Cymatics - Hip Hop: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/open?id=1fwrGtOsxtv8B4Rr9BjLzBizbVBGMyRDQ" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/open?id=1fwrGtOsxtv8B4Rr9BjLzBizbVBGMyRDQ</a></span><span style='font-size: 14.0PT; '>
+</span></li><li><span style='font-size: 14.0PT; '>Cymatics - 100k: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/open?id=1kIYGqBwhmd7fd6vrA_xr8JfMhWVn2EPi" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/open?id=1kIYGqBwhmd7fd6vrA_xr8JfMhWVn2EPi</a></span><span style='font-size: 14.0PT; '>
+</span></li><li><span style='font-size: 14.0PT; '>Cymatics - Future bass: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/open?id=1936g1PFlpG3Wq5ZePkjQ4n7X7Xor_mR_" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/open?id=1936g1PFlpG3Wq5ZePkjQ4n7X7Xor_mR_</a></span><span style='font-size: 14.0PT; '>
+</span></li><li><span style='font-size: 14.0PT; '>Cymatics - Savage Drums for Trap - Gold Edition: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/open?id=1LqSnAUdDFQ3b9K5s-9IK4XePwA0KzURm" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/open?id=1LqSnAUdDFQ3b9K5s-9IK4XePwA0KzURm</a></span><span style='font-size: 14.0PT; '>
+</span></li><li><span style='font-size: 14.0PT; '>Cymatics - Trap: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/open?id=1PBfE4FzkkPMeN1ivTrCbYZNO41ErQ0nV" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/open?id=1PBfE4FzkkPMeN1ivTrCbYZNO41ErQ0nV</a></span><span style='font-size: 14.0PT; '>
+</span></li><li><span style='font-size: 14.0PT; '>Cymatics - Guitar Sample Pack: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/open?id=1AqXDM_a736zXs0iIpbaj91rI1u3YZ8FK" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/open?id=1AqXDM_a736zXs0iIpbaj91rI1u3YZ8FK</a></span><span style='font-size: 14.0PT; '>
+</span></li><li><span style='font-size: 14.0PT; '>Cymatics - LIFE: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1vIZuwJB3req_y_PK83QwR23sj0cUu6gL/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1vIZuwJB3req_y_PK83QwR23sj0cUu6gL/view</a></span><span style='font-size: 14.0PT; '>
+</span></li><li><span style='font-size: 14.0PT; '>Cymatics - Millenium: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/open?id=1TmmlfnFU1Tw32jzT8FecTQ6e7C0obqDH" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/open?id=1TmmlfnFU1Tw32jzT8FecTQ6e7C0obqDH</a></span><span style='font-size: 14.0PT; '>
+</span></li></ul><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>14. Echo Sound Works: 
+</strong></span></p><ul style="padding-left: 20.0px;"><li><span style='font-size: 14.0PT; '>Grey Area V.1: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1S5WpA8rx_ZzZvqmvCuf1gB_uSZuGLbds/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1S5WpA8rx_ZzZvqmvCuf1gB_uSZuGLbds/view</a></span><span style='font-size: 14.0PT; '>
+</span></li><li><span style='font-size: 14.0PT; '>Aurora Guitars: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1RgMLR90J181gfmpWJRmgcrIpiHarKWWo/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1RgMLR90J181gfmpWJRmgcrIpiHarKWWo/view</a></span><span style='font-size: 14.0PT; '>
+</span></li><li><span style='font-size: 14.0PT; '>Ashes V.1: 
+</span></li></ul><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1nluv7HlPuxkoRlyh9kuXaq-TGry-2xzG/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1nluv7HlPuxkoRlyh9kuXaq-TGry-2xzG/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><ul style="padding-left: 20.0px;"><li><span style='font-size: 14.0PT; '>Future Bass Drums: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1TludkiK0X4ENPJOqayQmqhJy-hZrKRWp/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1TludkiK0X4ENPJOqayQmqhJy-hZrKRWp/view</a></span><span style='font-size: 14.0PT; '>
+</span></li></ul><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>15. Dropgun:
+</strong></span></p><ul style="padding-left: 20.0px;"><li><span style='font-size: 14.0PT; '>Dropgun - Future House 1: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1ZgSHxyiObsGxMdVzqceDACNKbMZ6z4wO/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1ZgSHxyiObsGxMdVzqceDACNKbMZ6z4wO/view</a></span><span style='font-size: 14.0PT; '>
+</span></li><li><span style='font-size: 14.0PT; '>Dropgun Samples - Vocal Future House: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/130rXRUhnHWtPVp7-k67YDbJR3o69bj7E/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/130rXRUhnHWtPVp7-k67YDbJR3o69bj7E/view</a></span><span style='font-size: 14.0PT; '>
+</span></li><li><span style='font-size: 14.0PT; '>Dropgun Samples - Vocal Future Bass 1: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1EYlHvq2jEYYNV2wfMWg0Mi7njHFKsH6x/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1EYlHvq2jEYYNV2wfMWg0Mi7njHFKsH6x/view</a></span><span style='font-size: 14.0PT; '>
+</span></li><li><span style='font-size: 14.0PT; '>Dropgun Samples - Vocal Trap: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1W224Z6JO5Xy9UiTQO8SO1lmsoxHd--eo/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1W224Z6JO5Xy9UiTQO8SO1lmsoxHd--eo/view</a></span><span style='font-size: 14.0PT; '>
+</span></li><li><span style='font-size: 14.0PT; '>Dropgun Samples - Vocal Future Bass 2: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1RzL3x9L45oF58koCLtQs6S-XuBDJe6sP/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1RzL3x9L45oF58koCLtQs6S-XuBDJe6sP/view</a></span><span style='font-size: 14.0PT; '>
+</span></li></ul><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>16. MusiCore LOST Progressive House: </strong></span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1YDQO7GQDtS4HdLyNy5OvRjwAFGGiz1rO/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1YDQO7GQDtS4HdLyNy5OvRjwAFGGiz1rO/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>17. EVO X TPS - Destination:</strong></span><span style='font-size: 14.0PT; '> </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1q0vHeRcXLGVbY5Xn0w-HlG5PyrjGU6Hk/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1q0vHeRcXLGVbY5Xn0w-HlG5PyrjGU6Hk/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>18. Audentity Records TOM And JAME:</strong></span><span style='font-size: 14.0PT; '> </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1bD_lQcjMWME3y52NlqJjQUnssGOXp3e_/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1bD_lQcjMWME3y52NlqJjQUnssGOXp3e_/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>19. Frontliner Hardstyle Sample Pack:</strong></span><span style='font-size: 14.0PT; '> </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1E1gxWT3D46umUlxaqlBgf_O4tLmXXWac/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1E1gxWT3D46umUlxaqlBgf_O4tLmXXWac/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>20. RGD Slap house V1:
+</strong></span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; color: #1155cc; '><a href="http://www.mediafire.com/file/l3pxohqpgrlou5q/_RGD_SLAP_HOUSE_PACK_V1.rar/file" style="font-size: 14.0PT; color: #1155cc; ">http://www.mediafire.com/file/l3pxohqpgrlou5q/_RGD_SLAP_HOUSE_PACK_V1.rar/file</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>21. XLNTSOUND MidTempo: </strong></span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1Ui8dmqcbGjlEJbMIo7qoQzWzg4ucspEw/view" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1Ui8dmqcbGjlEJbMIo7qoQzWzg4ucspEw/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>22. Aubit - ODESSA Vol. 3: </strong></span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1IryMqZzmJiZRETJnKlFaWHWOI8BMTvXL/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1IryMqZzmJiZRETJnKlFaWHWOI8BMTvXL/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>23. Black Octopus Sound - Leviathan 2: </strong></span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/16RK3MT5CCm94a10wgitQijYFPYXQXT2u/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/16RK3MT5CCm94a10wgitQijYFPYXQXT2u/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>24. Black Octopus Sound - Leviathan 3: </strong></span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1gBa3QurY0BRSEXkl2SowDt6SkeqKLQtn/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1gBa3QurY0BRSEXkl2SowDt6SkeqKLQtn/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>25. Spinnin' Sounds Bass House Sample Pack: </strong></span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1FRpNeYQ27cyw3L9nne9cE0WH_QLpktxE/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1FRpNeYQ27cyw3L9nne9cE0WH_QLpktxE/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>26. MusiCore ELEVATION Future Bounce:</strong></span><span style='font-size: 14.0PT; '> </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/10MpjxoA1eu1ZyZqIexfhwXr_ETB2_fLm/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/10MpjxoA1eu1ZyZqIexfhwXr_ETB2_fLm/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>27. Infinity Slap House Sample Pack:
+</strong></span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1AZeQQyyZKlo8fboLeeeQ7uaClV9ANiut/view" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1AZeQQyyZKlo8fboLeeeQ7uaClV9ANiut/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>28. The Producer&nbsp;&nbsp;School MILLENIUM:
+</strong></span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1PZINRfpTJ8hTxoBuU1UoSFcYaXXQixba/view" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1PZINRfpTJ8hTxoBuU1UoSFcYaXXQixba/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>29. Cymatics Vocal Pack (Acapella):
+</strong></span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/drive/folders/1Qffq5JSjw5KviVQJWbq0GSf1HL7jxHEt" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/drive/folders/1Qffq5JSjw5KviVQJWbq0GSf1HL7jxHEt</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>30. Production Master - Melodic Dubstep Voyage 2:
+</strong></span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1epnn1g8VCT_mv-776Eycm-K7zdEvXR0C/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1epnn1g8VCT_mv-776Eycm-K7zdEvXR0C/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>31. Production Master - Melodic Dubstep Voyage 3:
+</strong></span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1yK5M7-SsHN_rl2000TKJdkUG5MEUSRMs/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1yK5M7-SsHN_rl2000TKJdkUG5MEUSRMs/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>32. Virtual Riot Heavy Bass Design:
+</strong></span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1uM_JQQxkhzFCn48yfr6ITt_FOsayxw-m/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1uM_JQQxkhzFCn48yfr6ITt_FOsayxw-m/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>33. KARRA Vocal Sample Pack vol 1:
+</strong></span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1mw9m3nALsDJq3h5kM2jwk2ZeUyqgN-L7/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1mw9m3nALsDJq3h5kM2jwk2ZeUyqgN-L7/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>34. KARRA Vocal Sample Pack vol 2:
+</strong></span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1IEoaijfmzubpmR_Ti65PfSxMU1bPdnA-/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1IEoaijfmzubpmR_Ti65PfSxMU1bPdnA-/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>35. Vocal Atmospheres By Holly Drummond:
+</strong></span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1jIvflPY7ylTBdCxV8TDw87VysMaj8Idr/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1jIvflPY7ylTBdCxV8TDw87VysMaj8Idr/view</a></span><span style='font-size: 14.0PT; '><strong>
+</strong></span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>36. LOST vol 2 - progressive house (music core):</strong></span><span style='font-size: 14.0PT; '> </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1UcIHWMVyJqYToA7IZZtgsyQyvsiLLTLd/view" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1UcIHWMVyJqYToA7IZZtgsyQyvsiLLTLd/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>37. The Producer School - Redemption Bundle:</strong></span><span style='font-size: 14.0PT; '> </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1xQE5-rc55c_9JaNGsxa1yhVvBI4nJTWB/view" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1xQE5-rc55c_9JaNGsxa1yhVvBI4nJTWB/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>38. The Julian Jordan Producer pack:</strong></span><span style='font-size: 14.0PT; '> </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1MQHnCqGjgg8DTehVMVILd8sj0HvvGU_6/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1MQHnCqGjgg8DTehVMVILd8sj0HvvGU_6/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>39. The_Seth_Hills_Producer_Pack: </strong></span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/19Zg2KGLcipjrFuq6bmRVlEypReh6e0cv/view" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/19Zg2KGLcipjrFuq6bmRVlEypReh6e0cv/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>40. 789ten - Seth Hills V.2 The Drop:</strong></span><span style='font-size: 14.0PT; '> </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1I9bnWyxJ1h2X7fulqd6tXVZhHImE5StQ/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1I9bnWyxJ1h2X7fulqd6tXVZhHImE5StQ/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>41. Aubit awake vol 1: </strong></span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1oI024okYT6nRJk01igXyEbuNPsmvxPxq/view" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1oI024okYT6nRJk01igXyEbuNPsmvxPxq/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>42. GONZI SAMPLE PACK VOL 1:
+</strong></span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1qTWVTD14KkfcKUMAI72J4TrI6oko10MK/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1qTWVTD14KkfcKUMAI72J4TrI6oko10MK/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>43. Vengeance NU Disco vol 1:</strong></span><span style='font-size: 14.0PT; '> </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1FkSdFXJLPvGVbBrdIMTyn3jild9sNLcb/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1FkSdFXJLPvGVbBrdIMTyn3jild9sNLcb/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>44. The Producer School Gravity: </strong></span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1v5sbIJvtNY34X9tGn2bK-wy1oFUjfCD3/view" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1v5sbIJvtNY34X9tGn2bK-wy1oFUjfCD3/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>45. Midoca sample pack:</strong></span><span style='font-size: 14.0PT; '> </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/10PCD6jX61iC0Orvil6rwe7P976Pzwzpq/view" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/10PCD6jX61iC0Orvil6rwe7P976Pzwzpq/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>46. Origin Sound 4AM vibe (Lofi & RnB): </strong></span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1bJ-cF1yUvFn5PkwbCtuKM7i7ojWaky-h/view" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1bJ-cF1yUvFn5PkwbCtuKM7i7ojWaky-h/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>47. </strong></span><span style='font-size: 14.0PT; color: #202124; '><strong>Bryson Tiller Drum Kit </strong></span><span style='font-size: 14.0PT; '><strong>(Lofi & RnB)</strong></span><span style='font-size: 14.0PT; color: #202124; '><strong>:</strong></span><span style='font-size: 14.0PT; color: #202124; '> </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1JI_WFWZRmKPoPqcajwVHwtZp1AH35qQe/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1JI_WFWZRmKPoPqcajwVHwtZp1&nbsp;&nbsp;AH35qQe/view</a></span><span style='font-size: 14.0PT; color: #202124; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; color: #202124; '><strong>48. Origin Sound - LoFi & Chill:</strong></span><span style='font-size: 14.0PT; color: #202124; '> </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1Ev95lutAYZsN-N5MQ49kSqEtyh0sXWfV/view" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1Ev95lutAYZsN-N5MQ49kSqEtyh0sXWfV/view</a></span><span style='font-size: 14.0PT; color: #202124; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; color: #202124; '><strong>49. Origin Sound - Melody & Soul: </strong></span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1CUup5stZ7rp21cmjcNOwLs6JxUnDdkfX/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1CUup5stZ7rp21cmjcNOwLs6JxUnDdkfX/view</a></span><span style='font-size: 14.0PT; color: #202124; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; color: #202124; '><strong>50. Origin Sound - RNB Soul - Future Slow Jams: </strong></span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1SCpHDfkNmjg5_-jI3K-dJumIiOYDuwam/view" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1SCpHDfkNmjg5_-jI3K-dJumIiOYDuwam/view</a></span><span style='font-size: 14.0PT; color: #202124; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>52. Surge Sounds - The Sky: </strong></span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1eNQ5D3foJyzCJBmQsQNG7kDfhKZPQHpa/view" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1eNQ5D3foJyzCJBmQsQNG7kDfhKZPQHpa/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>53. Onii - chan - Kawaii: </strong></span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/14K28TCfI5mmLIywsVlDlweSeRLJC6LHi/view" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/14K28TCfI5mmLIywsVlDlweSeRLJC6LHi/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>54. Atmosphere:</strong></span><span style='font-size: 14.0PT; '> </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1TCF5JkgdzOP-u6VhuYj7y6SWx8KadaUR/view" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1TCF5JkgdzOP-u6VhuYj7y6SWx8KadaUR/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>55. Spinnin' Sounds Big Room Sample Pack:
+</strong></span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1kAzRjWzsiupnsM0RhKGvf2CJ5qisLd-O/view" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1kAzRjWzsiupnsM0RhKGvf2CJ5qisLd-O/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>56. Melodic FutureBass: </strong></span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1SZNGB-ONWOid4NwPcwXVlUhRzFWFeujG/view" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1SZNGB-ONWOid4NwPcwXVlUhRzFWFeujG/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 50.0PT; background-color: #e06666; '><strong>VST-PLUGINS:
+</strong></span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 25.0PT; '><strong>
+</strong></span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>1. 808 Bass module: </strong></span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1x9QhBeA7Q3Z6q4-bGIzeuxi3nwfHvmsv/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1x9QhBeA7Q3Z6q4-bGIzeuxi3nwfHvmsv/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>2. AGML2: 
+</strong></span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1Z0IoEKTkTuk6Qd-Pe80Qt_zixdjo8Om8/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1Z0IoEKTkTuk6Qd-Pe80Qt_zixdjo8Om8/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>3. Auto Tune 8, 9: </strong></span><span style='font-size: 14.0PT; '>
+</span></p><ul style="padding-left: 20.0px;"><li><span style='font-size: 14.0PT; '>ver 8: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1c-DC_hQo8qfPYbIyjKs4Hjpig0a1Pz7q/view" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1c-DC_hQo8qfPYbIyjKs4Hjpig0a1Pz7q/view</a></span><span style='font-size: 14.0PT; '>
+</span></li><li><span style='font-size: 14.0PT; '>ver 9: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://dubox.com/s/1_GF5NfghpOYyF_-REgk0bQ" style="font-size: 14.0PT; color: #1155cc; ">https://dubox.com/s/1_GF5NfghpOYyF_-REgk0bQ</a></span><span style='font-size: 14.0PT; '>
+</span></li></ul><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>4. Camelcrusher Win (32Bit): </strong></span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1sy2fw_CtE-lnozmilGMlFsKzrHwSe2A1/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1sy2fw_CtE-lnozmilGMlFsKzrHwSe2A1/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>5. dblue_TapeStop ( no install ): </strong></span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/165fXqSaIwGuFDdZbUi_lOZg_KgDmmWIw/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/165fXqSaIwGuFDdZbUi_lOZg_KgDmmWIw/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>6. DSK AkoustiK GuitarZ ( no install ): </strong></span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1Lj_r5QtJgxKHhclpi2uZpGhvk3_9pZ_j/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1Lj_r5QtJgxKHhclpi2uZpGhvk3_9pZ_j/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>7. DSK Dynamic Guitars (no install): </strong></span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/15x0bLHb3bvwWKqRX_5VCWzXBpZ3ljiRM/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/15x0bLHb3bvwWKqRX_5VCWzXBpZ3ljiRM/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>8. DSK Music Box (no install): </strong></span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1OAwRhpU6SBy4bGcA4qe3wLZbAy8R21Bu/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1OAwRhpU6SBy4bGcA4qe3wLZbAy8R21Bu/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>9. DSK Overture (no install): </strong></span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1JZaI93dj2ZyC9Sa206tS0QEhFe2rK2ej/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1JZaI93dj2ZyC9Sa206tS0QEhFe2rK2ej/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>10. DSK Saxophones (no install):</strong></span><span style='font-size: 14.0PT; '> </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1XT1ZU555QeitnKScMltWITdx12l_CklB/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1XT1ZU555QeitnKScMltWITdx12l_CklB/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>11. DSK SaxophoneZ (no install):</strong></span><span style='font-size: 14.0PT; '> </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1iy22FiWqAcCWBzCmGL1_acqVCpgvBbMP/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1iy22FiWqAcCWBzCmGL1_acqVCpgvBbMP/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>12. DSK_Asian_DreamZ (no install):</strong></span><span style='font-size: 14.0PT; '> </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1orHlLFXt9b5Sb5hKDDs3eVokcUTcqKk1/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1orHlLFXt9b5Sb5hKDDs3eVokcUTcqKk1/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>13. DSK_Harmonica (no install): </strong></span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1mGCno9EkHLzItVa6L1GJlPHFc5BTtOaj/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1mGCno9EkHLzItVa6L1GJlPHFc5BTtOaj/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>13’. DSK_Strings: </strong></span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1E3b9hkr957MOImD7cyJJwdBn9YEO1Dso/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1E3b9hkr957MOImD7cyJJwdBn9YEO1Dso/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>14. DUNE 2: </strong></span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1F37UCj6RpTWaYVXPWRY_MGUPoQK8mGks/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1F37UCj6RpTWaYVXPWRY_MGUPoQK8mGks/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>15. DVS Guitar (no install): </strong></span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1zql3kLUI-YYUXhJvx__BIp8lCY0rObFS/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1zql3kLUI-YYUXhJvx__BIp8lCY0rObFS/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>16. Endless Smile v1.0.0:</strong></span><span style='font-size: 14.0PT; '> </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1HAKlvnB7IfD1Fh0_SHgkJDtVTmVUHmIe/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1HAKlvnB7IfD1Fh0_SHgkJDtVTmVUHmIe/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>17. EZkeys (32 x 64bit) </strong></span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1zVC7pSNuUZ1Mnf8CuBlA96kx1JL0oDJb/view" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1zVC7pSNuUZ1Mnf8CuBlA96kx1JL0oDJb/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>18. FabFilter.TotalBundle.2020: 
+</strong></span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://terabox.com/s/17c8g0vCzHerLMYPDDgUvww" style="font-size: 14.0PT; color: #1155cc; ">https://terabox.com/s/17c8g0vCzHerLMYPDDgUvww</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>19. Glitch 2</strong></span><span style='font-size: 14.0PT; '> 
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1RAUjokhXwzYNHonbm3IOo83igduCgKfG/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1RAUjokhXwzYNHonbm3IOo83igduCgKfG/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>20. Harmony Engine Evo</strong></span><span style='font-size: 14.0PT; '> </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1E30vfcFfpGUofpPFz-qD4l8MTmf-doil/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1E30vfcFfpGUofpPFz-qD4l8MTmf-doil/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>21. iZotope Ozone </strong></span><span style='font-size: 14.0PT; '>
+</span></p><ul style="padding-left: 20.0px;"><li><span style='font-size: 14.0PT; '>ver 8: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1QzWDAokpFC_BMGur8fze1UST1JQPjQIc/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1QzWDAokpFC_BMGur8fze1UST1JQPjQIc/view</a></span><span style='font-size: 14.0PT; '>
+</span></li><li><span style='font-size: 14.0PT; '>ver 9: </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1bWR8BV0klzasQGxeykqkOsWUrloyv9AQ/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1bWR8BV0klzasQGxeykqkOsWUrloyv9AQ/view</a></span><span style='font-size: 14.0PT; '>
+</span></li></ul><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>22. Kick 2 
+</strong></span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1dY8ZbAJuGZ5JVpewn_Zohb_oboI7sR8U/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1dY8ZbAJuGZ5JVpewn_Zohb_oboI7sR8U/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>23. Kickstart 
+</strong></span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1nYPx9KibU2SF8L7WfmISJX5PSwljVMes/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1nYPx9KibU2SF8L7WfmISJX5PSwljVMes/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>24. Kong audio 
+</strong></span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1jrPDHZ4s82upH24c0xNsTIhrw7Cv5L2l/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1jrPDHZ4s82upH24c0xNsTIhrw7Cv5L2l/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>25. LennarDigital Sylenth1 2.2.1.2 VSTi x86 x64 Portable (cũ - nên xài v3 ở dưới, 
+</strong></span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>mục 38)
+</strong></span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/14S6YzaRzL7Uppws6B4uAGTcXL_VRVmhV/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/14S6YzaRzL7Uppws6B4uAGTcXL_VRVmhV/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>26. LFOTool</strong></span><span style='font-size: 14.0PT; '> </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1MyytskQTshxezVlmuQGhqYQMTeMLsbVw/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1MyytskQTshxezVlmuQGhqYQMTeMLsbVw/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>27. MagicStereo (64bit)</strong></span><span style='font-size: 14.0PT; '> </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1E8LSybmFwPkeRqAUSciUl3isLpmdLneg/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1E8LSybmFwPkeRqAUSciUl3isLpmdLneg/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>28. Massive 
+</strong></span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1TCIQ139NOi603vVCDjc_pk7Aefzqa8Sj/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1TCIQ139NOi603vVCDjc_pk7Aefzqa8Sj/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>29. Native Instruments Guitar Rig 5</strong></span><span style='font-size: 14.0PT; '> </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1KOy_8KReuhQATXHXgWoX2M_i34PhmIGH/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1KOy_8KReuhQATXHXgWoX2M_i34PhmIGH/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>30. Nexus</strong></span><span style='font-size: 14.0PT; '> (pass giải nén nếu có: flstudiovn)
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1e8pRnPETgIuzGNyQ9XmHI0u3xrCSclBL/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1e8pRnPETgIuzGNyQ9XmHI0u3xrCSclBL/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>31. Orchestral</strong></span><span style='font-size: 14.0PT; '> </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1rW4dq70_uTVeTw38rdeHRvekyH1zn7gK/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1rW4dq70_uTVeTw38rdeHRvekyH1zn7gK/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>32. OTT 
+</strong></span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1xGnCJG0rkvyWvA79fke9cbSvvlNW3CJG/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1xGnCJG0rkvyWvA79fke9cbSvvlNW3CJG/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>33. PanCake </strong></span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1jqu_0mOKoZRDKWB5xycT0TnNYnAgNaI0/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1jqu_0mOKoZRDKWB5xycT0TnNYnAgNaI0/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>34. Piano V2 
+</strong></span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1It-DeY9rSdJ7JcN37nV6XQHE1XJnz4nu/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1It-DeY9rSdJ7JcN37nV6XQHE1XJnz4nu/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>35. Real Guitar</strong></span><span style='font-size: 14.0PT; '> </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1Q3xP7qBzBYbY87P7ifQLmi94HXrgarq-/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1Q3xP7qBzBYbY87P7ifQLmi94HXrgarq-/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>36. Reveal.Sound.Spire.v1.5.5</strong></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://dubox.com/s/13Aw469J04yaqj4ZaXfR7sw" style="font-size: 14.0PT; color: #1155cc; ">https://dubox.com/s/13Aw469J04yaqj4ZaXfR7sw</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>37. Sausage Fattener </strong></span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1Iu2qQsWLH77MIQRt9L7F691daq3nAiQ0/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1Iu2qQsWLH77MIQRt9L7F691daq3nAiQ0/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>38. Sylenth_v3_067_VST</strong></span><span style='font-size: 14.0PT; '>: pass giải nén: “sylenth”
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1FLuCPEf1yQIOOG3504h4IkJysbMMeuvv/view" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1FLuCPEf1yQIOOG3504h4IkJysbMMeuvv/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>39. The Glue</strong></span><span style='font-size: 14.0PT; '> 
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1t8S37LXbZzpte6jxzTjGKYdWxANQE0q4/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1t8S37LXbZzpte6jxzTjGKYdWxANQE0q4/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>40. True Pianos (32 x 64bit) (khi cài xong chỉ cần nhập key bừa là được nhé)
+</strong></span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1rsoOiwlf_UJBgG4ueI71EBfowQXqmnNI/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1rsoOiwlf_UJBgG4ueI71EBfowQXqmnNI/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>41. Xfer Records - Serum v1.33b4</strong></span><span style='font-size: 14.0PT; '> </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1TeyDqLypS6Y1NNZk4-ChBWxpaMyemzHh/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1TeyDqLypS6Y1NNZk4-ChBWxpaMyemzHh/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>42. Kontakt 6: 
+</strong></span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1xhZf2qnYqQzeG3lnrkgpYedumINfwWua/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1xhZf2qnYqQzeG3lnrkgpYedumINfwWua/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>43. Whistler (no install): </strong></span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1Xab2K2zSIm2Xgb_XCm53dLXBvC9yYQsJ/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1Xab2K2zSIm2Xgb_XCm53dLXBvC9yYQsJ/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>44. GTune (no install): </strong></span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1DFPaqgaGGhW89S0FHFMPZ-nxg8WvjGIG/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1DFPaqgaGGhW89S0FHFMPZ-nxg8WvjGIG/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>45. Youlean Loudness Meter Pro v2:
+</strong></span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://dubox.com/s/1rhNlmimzkc8OK9QHtB9yxA" style="font-size: 14.0PT; color: #1155cc; ">https://dubox.com/s/1rhNlmimzkc8OK9QHtB9yxA</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>46. Span plus: 
+</strong></span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://dubox.com/s/1esWwGQbUEdzmL4Aku3m9cA" style="font-size: 14.0PT; color: #1155cc; ">https://dubox.com/s/1esWwGQbUEdzmL4Aku3m9cA</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>47. Lounge Lizard EP 4: 
+</strong></span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://dubox.com/s/1uEOy1Gse-W9YJbXbf7RbHg" style="font-size: 14.0PT; color: #1155cc; ">https://dubox.com/s/1uEOy1Gse-W9YJbXbf7RbHg</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>48. Valhalla DSP:
+</strong></span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://dubox.com/s/1Lplvzmoa_DaknQp5em0h9g" style="font-size: 14.0PT; color: #1155cc; ">https://dubox.com/s/1Lplvzmoa_DaknQp5em0h9g</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>49. XLN Audio Addictive Keys:
+</strong></span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1FmjnHfN_TOUTrQWXo0eE52UZZIC1p3vZ/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1FmjnHfN_TOUTrQWXo0eE52UZZIC1p3vZ/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>50. SoundToys The Ultimate:
+</strong></span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1hN7ZmVW13zmychlsRk4GvS5pP8uzM5aH/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1hN7ZmVW13zmychlsRk4GvS5pP8uzM5aH/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>51. Xpand2:</strong></span><span style='font-size: 14.0PT; '> 
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>52. Retro RC 20 Color: </strong></span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1aNWC-2yD9ZjWRXF1WMoXmIDiWovSDQE0/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1aNWC-2yD9ZjWRXF1WMoXmIDiWovSDQE0/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 14.0PT; '><strong>53. AOM - Total Bundle:</strong></span><span style='font-size: 14.0PT; '> </span><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://drive.google.com/file/d/1-7yph6qPybWELo8m9t944z0mDBgd2byX/view?usp=sharing" style="font-size: 14.0PT; color: #1155cc; ">https://drive.google.com/file/d/1-7yph6qPybWELo8m9t944z0mDBgd2byX/view</a></span><span style='font-size: 14.0PT; '>
+</span></p><p class="normal_text" style='direction: ltr; '><span style='font-size: 15.0PT; '>------------------------------------------------------------------------------------------------------------------
+</span></p><p class="normal_text" style='direction: ltr; text-align: center; '><span style='font-size: 15.0PT; '><strong>END.</strong></span><span style='font-size: 15.0PT; '>
+</span></p>
+</div><footer>
+    Created for free by
+    <a href="https://gdocweb.com" target="_blank">gdocweb</a>. <br>
+    Convert Google Docs files to full fledged websites <b>for free</b>.
+</footer>
 <script>
-  function login() {
-    let user = document.getElementById("username").value;
-    let pass = document.getElementById("password").value;
+function toggleMenu() {
+    var header = document.querySelector('header');
+    header.classList.toggle('nav-active');
+}
 
-    // Đăng nhập bằng tài khoản bạn yêu cầu
-    if (user === "nhung" && pass === "meomeo") {
-      document.getElementById("loginBox").style.display = "none";
-      document.getElementById("menu").style.display = "block";
-    } else {
-      alert("Sai tên đăng nhập hoặc mật khẩu!");
-    }
-  }
+function toggleSubmenu(event, submenuId) {
+    var submenu = document.getElementById(submenuId);
+    var parentLi = submenu.parentElement;
+    parentLi.classList.toggle('submenu-active');
+    event.stopPropagation();
+}
 
-  // Chức năng 1: Tối ưu máy
-  function optimizeDevice() {
-    if (window.gc) {
-      window.gc();
+window.onclick = function(event) {
+    var submenus = document.getElementsByClassName("submenu");
+    for (var i = 0; i < submenus.length; i++) {
+        var parentLi = submenus[i].parentElement;
+        if (!parentLi.contains(event.target)) {
+            parentLi.classList.remove('submenu-active');
+        }
     }
-    for (let i = 0; i < 100000; i++) {
-      let temp = null;
-    }
-    alert("✅ Máy đã được tối ưu!");
-  }
-
-  // Chức năng 2: Fix lag
-  function fixLag() {
-    let bigArray = [];
-    for (let i = 0; i < 1000000; i++) {
-      bigArray.push(i);
-    }
-    bigArray = null;
-    if (window.gc) window.gc();
-    alert("🚀 Đã dọn RAM và giảm lag!");
-  }
-
-  // Chức năng 3: Tối ưu cuối (tắt app nền mô phỏng)
-  let backgroundApps = ["Facebook", "Messenger", "TikTok", "YouTube", "Zalo"];
-  function closeBackgroundApps() {
-    if (backgroundApps.length === 0) {
-      document.getElementById("apps").innerHTML = "✅ Không còn ứng dụng chạy nền!";
-      return;
-    }
-    let closed = backgroundApps.join(", ");
-    backgroundApps = []; // xoá hết app nền
-    document.getElementById("apps").innerHTML = "🔒 Đã tắt ứng dụng nền: " + closed;
-    alert("✅ Đã tắt toàn bộ ứng dụng chạy nền!");
-  }
+}
 </script>
-
 </body>
 </html>
